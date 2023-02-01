@@ -81,19 +81,22 @@ body{
   overflow: hidden;
 }
 
-.todoList li span{
+.todoList li .icon{
   position: absolute;
   right: -45px;
-  color: #fff;
+  top: 50%;
+  transform: translateY(-50%);
   background: #e74c3c;
   width: 45px;
   text-align: center;
+  color: #fff;
+  padding: 10px 15px;
   border-radius: 0 3px 3px 0;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
 }
 
-.todoList li:hover span{
+.todoList li:hover .icon{
   right: 0px;
 }
 
@@ -106,12 +109,22 @@ body{
 }
 
 .footer button{
+  padding: 6px 10px;
+  border-radius: 3px;
   border: none;
   outline: none;
-  background: #e849ae;
   color: #fff;
+  font-weight: 400;
   font-size: 16px;
+  margin-left: 5px;
+  background: #e849ae;
   cursor: pointer;
-  border-radius: 3px;
-  padding: 6px 10px;
+  user-select: none;
+  opacity: 0.6;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+.footer button.active{
+  opacity: 1;
+  pointer-events: auto;
 }
