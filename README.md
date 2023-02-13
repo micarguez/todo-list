@@ -16,6 +16,7 @@ This project was intended to be a tool for adding items to a to-do list. It was 
 
 ## Screenshots
 ### Dashboard page
+![Example to-do list](https://user-images.githubusercontent.com/48107564/218521294-e28f8e13-5fdc-4abc-85ec-db8aadb00906.png)
 
 ## Project Status
 The current project is finished.
